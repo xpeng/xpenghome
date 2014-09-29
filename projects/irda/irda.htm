@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>红外传输及其代理应用</title>
+<style type="text/css">
+.style1 {
+	font-size: xx-large;
+}
+.style7 {
+	text-align: center;
+	font-size: xx-large;
+}
+.style8 {
+	text-align: left;
+}
+.style9 {
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<p><span class="style1">2001</span></p>
+<p class="style7"><strong>红外传输及其代理应用</strong></p>
+<p class="style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+2001年，怀着要考研又要工作的矛盾心理，我进入了一家通信公司。如人所料，第一个接手的实践项目就和网络有关！<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+公司要求我用红外设备协议搞网络的应用层服务，也就是要在红外线传输上实现HTTP，FTP等互联网应用服务，当时在没有任何资料给我的情况下可把我弄傻眼了。从网上挖了一大堆乱七八糟的有关IRDA的资料下来瞎搞，结果搞了几天才让两个红外串行设备工作起来。<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+这个时候，公司带我的老大教我写需求分析，才使我第一次认识到需求对设计的重要性。最终，在几个星期之后，我在IRDA上实现了使用套接字的字节流传输。同时，经过痛苦的阅读理解，在大片大片的HTTP、FTP协议文档下面，我实现了IP之上的一个代理程序。几天之后，成功将代理的功能移植到了IRDA之上。这是我在四川国腾集团、国腾科技（原四川华威信息有限公司研究中心）做本科毕业设计时自主完成的一些项目。<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 它们建立在IRDA标准红外线外设应用以及应用层协议代理处理的基础上。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我的论文：<a href="IRDAProxy.pdf">《通过红外线设备进行TCP/IP互连》</a><br />
+<br />
+<strong>标准红外线文件传输应用　IRDA File Transmission </strong><br />
+（该程序于2001年7月停止更新！）</p>
+<p class="style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IRFDemo 
+客户和服务器两边都可以同时通过红外线互传文件。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 有信息到达，软件自动通知用户文件到来，由用户选择是否接收。</p>
+<p class="style9"><img alt="irda" src="image002.jpg" width="416" height="195" /><br />
+IRFDemo 界面</p>
+<p class="style8">下载：IRFDemo</p>
+<p class="style8"><strong>标准红外线设备的Http代理服务（需要标准红外线设备） IRDA HTTP Proxy</strong><br />
+（该程序于2001年7月停止更新！）<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IRProxyServer（代理服务端）运行于代理服务器上，绑定红外设备连接。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IRProxyClient（代理客户端） 
+红外代理客户端，绑定红外设备连接服务器。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 代理端口由客户端设定，软件界面有对每一个请求的解析显示。</p>
+<p class="style9"><img alt="irda" src="image004.jpg" width="500" height="315" /><br />
+IRProxyClient 界面</p>
+<p class="style8"><strong>Http与Ftp代理服务（无红外线支持） Http/FTP Proxy Server </strong>
+<br />
+（该程序于2001年6月停止更新！）<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+该程序在服务器上运行，通过分别设置HTTP端口和FTP端口，系统可同时进行超文本和文件传输协议的代理服务。软件界面是对每一个请求的解析显示。</p>
+<p class="style9"><img alt="irda" src="image006.jpg" width="498" height="318" /><br />
+Proxy Server 界面</p>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GPU GHDRC</title>
+<style type="text/css">
+.style1 {
+	font-size: xx-large;
+}
+.style7 {
+	text-align: center;
+	font-size: xx-large;
+}
+ table.MsoNormalTable
+	{font-size:10.0pt;
+	font-family:"Times New Roman";
+	}
+.style8 {
+	text-align: left;
+}
+</style>
+</head>
+
+<body>
+
+<p><span class="style1">2004</span></p>
+<p class="style7">GPU GHDRC</p>
+<table id="table46" border="0" cellSpacing="0" cellPadding="5" width="100%" height="241">
+	<tr>
+		<td style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: 1px solid; BORDER-RIGHT: medium none" height="31" vAlign="top" width="100%" align="left">
+		<b><font color="#ff0000" size="4" face="Times New Roman">GPU GHDRC (A 
+		research work on HDRC)</font></b></td>
+	</tr>
+	<tr>
+		<td style="BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none" height="90" vAlign="top" width="100%" align="middle">
+		<table id="table48" class="MsoNormalTable" border="1" cellSpacing="0" cellPadding="0">
+			<tr style="HEIGHT: 23.85pt">
+				<td style="BACKGROUND-IMAGE: none; BORDER-BOTTOM: #808000 1pt solid; BORDER-LEFT: #808000 1.5pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 0cm; BACKGROUND-ATTACHMENT: scroll; PADDING-RIGHT: 0cm; BACKGROUND-REPEAT: repeat; BACKGROUND-POSITION: 0% 0%; BORDER-TOP: #808000 1.5pt solid; BORDER-RIGHT: #808000 1pt solid; PADDING-TOP: 0cm" width="99%">
+				<p style="TEXT-ALIGN: center" class="MsoNormal" align="center">
+				<span style="FONT-SIZE: 16pt" lang="EN-US"><br />
+				High Dynamic Range Compression on Programmable Graphics Hardware</span></p>
+				<p style="TEXT-ALIGN: center" class="MsoNormal" align="center">
+				<span style="FONT-SIZE: 12pt" lang="EN-US">PENG Tao<sup>1,2</sup>&nbsp; 
+				HU Yaohua<sup>2</sup>&nbsp; LI Zaiming<sup>1</sup></span></p>
+				<p style="TEXT-ALIGN: center; TEXT-INDENT: -18pt; MARGIN-LEFT: 18pt" class="MsoNormal" align="center">
+				<span style="FONT-SIZE: 9pt" lang="EN-US">1.<span style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span>Communication and Information Engineering Institute of 
+				UESTC, ChengDu &nbsp;610054<br />
+				2.<span style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span>Microsoft Research Asia, BeiJing 100080</span></p>
+				<p style="TEXT-INDENT: 21.1pt" class="style8"><b>
+				<span lang="EN-US">Abstract </span></b><span lang="EN-US">&nbsp;We 
+				present a system for compressing high dynamic range images to 
+				fit conventional display devices that are only capable of 
+				outputting a low dynamic range. In addition to manipulating the 
+				gradient field of luminance image by attenuating the large 
+				gradients‘ magnitudes, it can preserve fine details, resulting 
+				in an image which provokes the same responses as someone would 
+				have viewing the scene in the real world. Specifically, with the 
+				whole process built on programmable graphics hardware, we 
+				present an efficient algorithm based on GPU acceleration and 
+				provide a fast dynamic range compression technique. Furthermore, 
+				we describe a framework for rendering high dynamic range images 
+				in real time. It not only can be used in image based tone 
+				mapping but also is able to be a core technique in interactive 
+				graphics applications.</span></p>
+				<p style="TEXT-INDENT: 21.1pt" class="style8"><b>
+				<span lang="EN-US">Key words </span></b><span lang="EN-US">
+				&nbsp;Image Processing, High Dynamic Range Compression, Poisson 
+				Equation, Programmable Graphics Hardware</span></p>
+				<p style="MARGIN-LEFT: 0cm" class="style8"><span lang="en-us">
+				<font size="3">DownLoad:<br />
+				</font></span><span lang="EN-US"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				I&#39;ve implemented a demo for GPUGHDRC, which is based on Supra 
+				Engine.&nbsp; For </font></span>
+				<span style="FONT-FAMILY: 宋体" lang="en-us">MS Confidential, I 
+				can not supply the demo.</span><span lang="EN-US"><font size="2"><br />
+				</font></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span lang="EN-US">All the algorithms and details of 
+				implementation are described in my paper “<a style="TEXT-DECORATION: underline; text-underline: single" target="_blank" href="GPUGHDRC.pdf">High 
+				Dynamic Range Compression on Programmable Graphics Hardware</a>”（Appeared 
+				in Microcomputer Development, Issue 9, 2005）.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Slides:&nbsp; </span>
+				<a target="_blank" href="GPUGHDRC_slides.pdf">GPUGHDRC_slides.pdf</a></p>
+				<p style="MARGIN-LEFT: 0cm" class="MsoToc2"><font size="3">
+				Screen Shot:</font></p>
+				<p style="MARGIN-LEFT: 0cm" class="MsoToc2" align="center">
+				<a name="g1">
+				<img border="0" alt="GHDRC with parameters in tweaker" src="hdr1b.jpg" width="512" height="387" /></a></p>
+				<p style="MARGIN-LEFT: 0cm" class="MsoToc2" align="center">GHDRC 
+				with parameters in tweaker</p>
+				<p style="MARGIN-LEFT: 0cm" class="MsoToc2" align="center">
+				<a name="g2">
+				<img border="0" alt="work on HDR memorial scène" src="hdr2b.jpg" width="512" height="412" /></a></p>
+				<p style="MARGIN-LEFT: 0cm" class="MsoToc2" align="center">work 
+				on HDR memorial scène</p>
+				<p class="MsoNormal"><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+				<p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

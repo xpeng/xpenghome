@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>地理信息系统（GIS）</title>
+<style type="text/css">
+.style1 {
+	font-size: xx-large;
+}
+.style7 {
+	text-align: center;
+	font-size: xx-large;
+}
+</style>
+</head>
+
+<body>
+
+<p><span class="style1">2001</span></p>
+<p class="style7"><strong>地理信息系统（GIS）</strong></p>
+<p style="TEXT-ALIGN: center" class="MsoNormal" align="center"><b>
+<font color="#ff0000" face="楷体_GB2312">（该程序于2001年12月停止更新！）<br />
+　</font></b></p>
+<p style="TEXT-ALIGN: center" class="MsoNormal" align="center"><b>
+<font size="5" face="楷体_GB2312">智能电子地图 1.0</font></b></p>
+<p style="TEXT-ALIGN: center" class="MsoNormal" align="center"><b>
+<font size="3" face="宋体">2001年8月</font></b></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+2001年夏天，我受命研究用于多媒体信息机上的GIS系统。在不采用MapGuide等第三方控件的情况下，我开发出一套具备自主数据库的电子地图系统，该系统主要应用于智能信息终端上，可以方便地扩充到从专用键盘或者触摸屏接受输入。 
+</p>
+<p><font size="3" face="楷体_GB2312"><b>Demo下载：<br />
+</b></font><font size="2" face="宋体">&nbsp;&nbsp;&nbsp;
+<a href="CityGuide_v1.zip">CityGuide Demo 1.0</a></font> </p>
+<p><b><font size="3" face="楷体_GB2312">浏览：</font></b> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a name="m1"></a>
+<span style="FONT-FAMILY: 宋体">在一定比例尺下的地图区域上，通过<b>平面上的各点</b>表示所有的地理相关<b>业务信息</b>。这些业务信息以<b>点状位图</b>在地图窗口区域上显示，本机点采用特殊标志，其余地理信息点采用差异标志，标志旁不作注释，仅表示该处有地理信息。点状图大小为</span><span lang="EN-US">14*14</span><span style="FONT-FAMILY: 宋体">，透明显示。</span>
+</p>
+<p align="center">
+<img alt="gis" src="cityguide_browseb.jpg" width="640" height="390" /> </p>
+<p align="center">基本浏览界面 </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="FONT-FAMILY: 宋体">
+在窗口左下角提供缩小的全景图，全景图中框出当前显示的区域。采用固定地图的位图大小，不进行缩放而在位图上直接显示信息。考虑到具有详细列表以及允许在多个地理点重合，地图上将一次显示完所有的点信息。<font size="2"><br />
+&nbsp;&nbsp;&nbsp; 浏览地图的移动由图上一个圆形选择框来决定，小选择框也起到<b>框选</b>（框内的点都被选择）的作用。</font></span>
+</p>
+<p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; </span><a name="m2"></a><b>
+<span style="FONT-FAMILY: 宋体">详细列表，</span></b><span style="FONT-FAMILY: 宋体">用户可以在框选（在按键方式上采用移动选择）点状图后，获取点状图代表的地理区域的相关详细信息。<br />
+&nbsp;&nbsp;&nbsp; 用户的查询结果也是在详细列表中显示的。<br />
+&nbsp;&nbsp;&nbsp; 详细列表信息是在一个全屏列表上显示结果集中的所有记录，同时右下角开出</span><span lang="EN-US">1/4</span><span style="FONT-FAMILY: 宋体">屏幕，根据用户在列表中的选择实时显示点在地图中的位置。<font size="2"><br />
+&nbsp;&nbsp;&nbsp; 用户可以在详细列表中删除以前属于自己的录入信息。</font></span> </p>
+<p align="center">
+<img alt="gis" src="cityguide_brdetailb.jpg" width="640" height="390" /> </p>
+<p align="center">详细信息浏览 </p>
+<p><b><font size="3" face="楷体_GB2312">录入：</font></b> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a name="m3"></a>
+<span style="FONT-FAMILY: 宋体">用户可以在地图上选择了录入中心点后进行录入操作（如果该地域信息可以进行录入操作的话）。<br />
+<font size="2">&nbsp;&nbsp;&nbsp; 
+录入方式下，用户在选择了地理位置（中心点）后，弹出录入信息窗口，然后用户在该窗口下进行选择或录入信息、设定密码。在用户确认保存后，该点即加入并成为相关业务层的业务数据，这个点状地域也会在浏览查询中出现。</font></span>
+</p>
+<p align="center">
+<img alt="gis" src="cityguide_inputb.jpg" width="640" height="390" /> </p>
+<p align="center">信息录入界面 </p>
+<p><b><font size="3" face="楷体_GB2312">查询：<br />
+</font></b><font size="2" face="宋体">&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp; </font><span style="FONT-FAMILY: 宋体">
+提供按距离查询和文字查询两种查询方式。（查询结果显示在详细列表中）<br />
+&nbsp;&nbsp;&nbsp; </span><a name="m4"></a><b><span style="FONT-FAMILY: 宋体">
+按距离查询</span></b><span style="FONT-FAMILY: 宋体">时，缺省设置为距本机位置一定距离（距离采用公制，换算通过地图比例尺进行）范围内的数据，提供可选中心点、可选查找半径的查询方式。<br />
+&nbsp;&nbsp;&nbsp; </span><span style="FONT-FAMILY: 宋体; FONT-SIZE: 10.5pt">
+查询时让用户输入距离是这样实现的：用户在地图上选择中心点，在中心点处圈出查询范围（画圈），可以用移动键可视地缩放距离，距离值同时在圈上画出的半径动态地标出；同时用户也可以通过查询窗口设定具体半径。然后进行查询。</span>
+</p>
+<p align="center">
+<img alt="gis" src="cityguide_search1b.jpg" width="640" height="390" /> </p>
+<p align="center">业务查询界面 </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a name="m5"></a>&nbsp;<b><span style="FONT-FAMILY: 宋体">文本查询方式</span></b><span style="FONT-FAMILY: 宋体">：用户在查询窗口的业务栏选择查询的业务，再在属性栏选择查询业务的属性（如地点名字、价格），输入属性关键字。系统在整个地图上找到所有匹配点。由于所有信息都是属于业务记录的不同属性列，应该可以实现条件查询。<br />
+<font size="2">&nbsp;&nbsp;&nbsp; 根据文字查询时，查询方式同格式化文本，通过录入而不是选择来提供查询条件。查询后，</font><b><font size="2">所有结果进入详细列表。</font></b></span>
+</p>
+<p align="center">
+<img alt="gis" src="cityguide_search3b.jpg" width="640" height="390" /> </p>
+<p align="center"><a name="m6"></a>文本查询界面 </p>
+<p align="center">
+<img alt="gis" src="cityguide_search2b.jpg" width="640" height="390" /> </p>
+<p align="center">查询结果界面 </p>
+<p><span style="FONT-FAMILY: 楷体_GB2312; FONT-WEIGHT: 700"><font size="3">原始数据：<br />
+&nbsp;&nbsp; </font></span><span style="FONT-FAMILY: 宋体">地理地图（</span><span lang="EN-US">BMP</span><span style="FONT-FAMILY: 宋体">位图或其他文件格式）、业务数据（坐标信息、属性）</span>
+</p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 楷体_GB2312"><font size="3">
+收费问题：<br />
+&nbsp;&nbsp; </font></span></b><span style="FONT-FAMILY: 宋体">提供计次收费和计时收费。<br />
+&nbsp;&nbsp;&nbsp; 录入查询操作采用按不同费率计次收费。<br />
+&nbsp;&nbsp;&nbsp; 浏览操作采用计时收费。</span></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 楷体_GB2312"><font size="3">
+环境要求：<br />
+&nbsp;&nbsp; </font></span></b><span style="FONT-FAMILY: 宋体">
+由于可以显示不同类型的业务信息，所以应用要一次访问一个或多个不同类业务数据。解决方法是在共享</span><span lang="EN-US"><font face="宋体">Rule</font></span><span style="FONT-FAMILY: 宋体">下添加一个业务映射表。表中记录包含各个业务的</span><span lang="EN-US"><font face="宋体">ID</font></span><span style="FONT-FAMILY: 宋体">、中文名称说明和相对路径，加载时首先加载缺省的业务。如果没有映射表存在，则直接加载进入的业务。</span>
+</p>
+<p class="MsoNormal"><span style="FONT-FAMILY: 宋体">（</span><span lang="EN-US"> 
+Produced by Delphi 6.0 </span><span style="FONT-FAMILY: 宋体">）</span> </p>
+<p class="MsoNormal" align="center"><font size="3" face="楷体_GB2312">
+<span style="FONT-WEIGHT: 700">那一年，图形天下！</span></font></p>
+
+</body>
+
+</html>
